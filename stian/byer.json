@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+[
+      {
+         "navn":"Bergen",
+         "postnummer":"0121",
+         "rente":"2,5"
+      },
+      {
+         "navn":"Oslo",
+         "postnummer":"0122",
+         "rente":"3,6"
+      },
+      {
+        "navn":"Kongsberg",
+        "postnummer":"0123",
+        "rente":"4,7"
+      }
+   ]
+=======
+[
+      {
+         "navn":"Bergen",
+         "postnummer":"0121",
+         "rente":"2,5"
+      },
+      {
+         "navn":"Oslo",
+         "postnummer":"0122",
+         "rente":"3,6"
+      },
+      {
+        "navn":"Kongsberg",
+        "postnummer":"0123",
+        "rente":"4,7"
+      }
+   ]
+>>>>>>> origin/master

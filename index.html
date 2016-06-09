@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Christoffer Valland</title>
+			<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+			<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+			<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+			<link rel="manifest" href="/manifest.json">
+			<link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico">
+    	<!--Adding Bootstrap-->
+    	<link rel="stylesheet" href="Thirdparty/bootstrap/css/bootstrap.css">
+    	<!--My own stylesheet-->
+    	<link rel="stylesheet" href="css/styling.css">
+      <!-- Stylesheet to get the sticky footer with copyright and information -->
+      <link rel="stylesheet" href="css/sticky-footer.css">
+    	<!--Font awesome used to provide custom icons/glyphicons to bootstrap-->
+    	<link rel="stylesheet" href="Thirdparty/fontawesome/css/font-awesome.min.css">
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+      <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+      <meta content="" name="description" content="Page to represent the recommendations for a user"></meta>
+      <meta content="" name="author" content="Christoffer Valland"></meta>
+    </head>
+
+    <body>
+  	  <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button">
+              <span class="sr-only">
+                Toggle navigation
+              </span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">
+              Christoffer Valland
+            </a>
+          </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a data-toggle="tab" href="#home">Om meg</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#utdanning">Utdanning</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#prosjekt">Prosjekt</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#kontakt">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+              <!--
+              /.nav-collapse
+              -->
+          </div>
+        </nav>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-heading">Christoffer Valland</h4>
+                    </div>
+                    <div class="panel-body">
+                      <img class="img img-responsive" alt="Profile image" src="images/profil.jpg">
+                      <p></p>
+                      <p>Namn: <br/> Christoffer Valland</p>
+                      <p>Fødd: <br/> 12.07.1991</p>
+                      <p>Bustad: <br/> Bergen</p>
+                    </div>
+                  </div>
+                <!--
+                Div col-xs-6 col-sm-4 end.
+                -->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                  <div class="hero-unit">
+                    <h2>Om meg</h2>
+                    <p>Ferdig utdanna informasjonsvitar med <a href="http://www.uib.no/studieprogram/MASV-INFO" target="blank">mastergrad i Informasjonsvitenskap</a> frå Universitetet i Bergen. Eg byrja på bachelorprogrammet i Informasjonsvitenskap August 2010, og har fulgt programmet fram mot mastergradsprogrammet.
+                  </div>
+                <!--
+                Div col-sm-8 end.
+                -->
+                </div>
+              </div>
+            <!--
+            Container end.
+            -->
+            </div>
+          <!--
+          Tab "home" end.
+          -->
+          </div>
+          <div id="utdanning" class="tab-pane fade">
+            <div class="container">
+              <div class="hero-unit">
+                <h2>Utdanning</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-danger" style="width:48%">
+                        <p>Programmering</p>
+                      </div>
+                      <div class="progress-bar progress-bar-primary" style="width:30%">
+                        <p>Teori</p>
+                      </div>
+                      <div class="progress-bar progress-bar-success" style="width:13%">
+                        <p>Design</p>
+                      </div>
+                      <div class="progress-bar progress-bar-warning" style="width:9%">
+                        <p>Web</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div id="programmeringPanel" class="panel panel-danger">
+                      <div class="panel-heading">
+                        <h4 class="panel-heading">Programmering</h4>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="http://www.uib.no/emne/INFO132" target="_blank">Grunnkurs i programmering</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO125" target="_blank">Innføring i databasehandsaming</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO125" target="_blank">Utvalte emne i databasehandsaming</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO212" target="_blank">Prosjekt i systemutvikling</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO212" target="_blank">Systemutvikling</a></li>
+                          <li>Multimediahandsaming</li>
+                          <li><a href="http://www.uib.no/emne/INFO233" target="_blank">Avansert programmering</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO232" target="_blank">Logikkprogrammering</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO282" target="_blank">Knowledge Representation and Reasoning</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO310" target="_blank">Advanced Topics in Information Systems</a></li>
+                          <li><a href="http://www.uib.no/emne/INFO371" target="_blank">Topics in Networks and Text Analysis</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div id="teoripanel" class="panel panel-info">
+                      <div id="teoriheading" class="panel-heading">
+                        <h4 class="panel-heading">Teori</h4>
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="http://www.uib.no/emne/INFO100" target="_blank">Grunnkurs i informasjonsvitenskap</a></li>
+                        <li><a href="http://www.uib.no/emne/EXPHIL-SVSEM" target="_blank">Examen philosophicum</a></li>
+                        <li><a href="http://www.uib.no/emne/INFO102" target="_blank">Formelle metodar for informasjonsvitenskap</a></li>
+                        <li><a href="http://www.uib.no/emne/INFO110" target="_blank">Informasjonssystem</a></li>
+                        <li><a href="http://www.uib.no/emne/INFO207" target="_blank">Sosial nettverksteori</a></li>
+                        <li><a href="http://www.uib.no/emne/INFO103" target="_blank">Informasjon og kunnskap</a></li>
+                        <li><a href="http://www.uib.no/emne/INFOMEVI300" target="_blank">Prosjektarbeid og forskingsdesign</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div id="designPanel" class="panel panel-success">
+                      <div class="panel-heading">
+                        <h4 class="panel-heading">Design</h4>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                        <li><a href="http://www.uib.no/emne/DIKULT105" target="_blank">Webdesign I</a></li>
+                        <li><a href="http://www.uib.no/emne/INFO262" target="_blank">Interaction Design</a></li>
+                        <li><a href="http://www.uib.no/emne/INFO361" target="_blank">Advanced Topics in Human-Computer Interaction</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div id="webpanel" class="panel panel-warning">
+                    <div class="panel-heading">
+                      <h4 class="panel-heading">Web</h4>
+                    </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="http://www.uib.no/emne/INFO115" target="_blank">The Social Web</a></li>
+                        <li><a href="http://www.uib.no/emne/INF111" target="_blank">Introduksjon til informasjonsteknologi</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!--
+          Div "utdanning" end.
+          -->
+          </div>
+          <div id="prosjekt" class="tab-pane fade">
+            <div class="container">
+              <div class="hero-unit">
+                <h2>Prosjekt</h2>
+                <div class="row">
+									<div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-heading">Web-App: Livbøye</h4>
+                      </div>
+                      <div class="panel-body">
+                        <a href="http://christoffervalland.no/lifebuoy/" target="blank"><img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="images/lifebuoyweb.png" style="width:200px;"></a>
+                        <p>UTVIKLINGSPROSJEKT (WEB): Basert på Livbøye-appen til iOS. Nyttar Google Maps API for framsyning av kart, samt oppmerking av bøyene.
+													Nyttar ein MongoDB og MongoLab for lagring og tilgjengeleggjering av data om livbøyene.
+                        </p>
+                        <p></p>
+                        <a href="https://github.com/christoffervalland/Webpage/tree/master/lifebuoy" target="blank">Lifebuoy (WEB) GitHub</a> | <a href="http://christoffervalland.no/lifebuoy/" target="blank">Test-utgåve</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-heading">App: Livbøye</h4>
+                      </div>
+                      <div class="panel-body">
+                        <a href="https://github.com/christoffervalland/LifeBuoy" target="blank"><img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="images/lifebuoy.png" style="width:200px;"></a>
+                        <p>UTVIKLINGSPROSJEKT: Med regjeringa sitt nylege fokus på sikkerhet på sjøen, tenkte eg det kunne vere nyttig med ein applikasjon
+                          som syner næraste livbøye på eit kart.
+                        </p>
+                        <p></p>
+                        <a href="https://github.com/christoffervalland/LifeBuoy" target="blank">Lifebuoy GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-heading">Web: Christoffer Valland</h4>
+                      </div>
+                      <div class="panel-body">
+                        <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="images/christoffervalland.png" data-holder-rendered="true" style="width:200px;">
+                        <p></p>
+                        <p>Sjølvutvikla heimeside. Her har eg nytta Bootstrap rammeverket.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-heading">Web: Mads Lexander</h4>
+                      </div>
+                    <div class="panel-body">
+                      <a href="http://www.madslexander.com" target="blank"><img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="images/madsscreenshot.png" data-holder-rendered="true" style="width:200px;"></a>
+                      <p></p>
+                      <p>Foreløpig stilsatt med tema frå wordpress.</p>
+                      <a href="http://www.madslexander.com" target="blank">Mads Lexander sin nettstad</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-heading">Semantisk LastFM</h4>
+                    </div>
+                    <div class="panel-body">
+                      <a href="https://github.com/christoffervalland/INFO310-Semantic" target="blank"><img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="images/lastfm.jpg" data-holder-rendered="true" style="width:200px;"></a>
+                      <p></p>
+                      <p>Semantisk løfting av LastFM sitt API. Samt semantisk
+                        annbefaling av konsertar. Obligatorisk oppgåve i INFO310.</p>
+                      <a href="https://github.com/christoffervalland/INFO310-Semantic" target="blank">LastFM-Prosjekt</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-heading">Rotten Tomatoes</h4>
+                    </div>
+                    <div class="panel-body">
+                      <a href="https://github.com/christoffervalland/Movienator-1" target="blank"><img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="images/rottentomatoes.png" data-holder-rendered="true" style="width:200px;"></a>
+                      <p></p>
+                      <p>Nyttar RottenTomatoes API for å gje brukarar moglegheit
+                        til å markere filmar som "favorittar" i ein lokal applikasjon.
+                        Obligatorisk oppgåve i INFO231.</p>
+                      <a href="https://github.com/christoffervalland/Movienator-1" target="blank">Film-Prosjekt</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--
+        Tab "prosjekt" end.
+        -->
+        </div>
+
+        <div id="kontakt" class="tab-pane fade">
+          <div class="container">
+            <div id="kontaktinfo" class="hero-unit">
+              <h2>Kontakt</h2>
+              <p>Dersom du ynskjer kontakt med meg, finn du kontaktinformasjon nedanfor. Eg er også tilgjengeleg på fleire medier.</p><br/>
+              <div class="row">
+                <ul class="col-xs-9 col-sm-6">
+                  <li><p><i class="glyphicon glyphicon-phone"></i> (+47) 915 83 800</p></li>
+                  <li><p><i class="glyphicon glyphicon-envelope"></i>
+                  <SCRIPT type='text/javascript'>
+                    myMail = "christoffervalland";
+                    myDomain = "gmail.com";
+                    email = myMail + '@' + myDomain;
+                    ref = '<a href="' + 'mailto:';
+                    erence = email + ' (Christoffer Valland)">christoffervalland@gmail.com</a>';
+                    reference = ref + erence;
+                    document.write(reference);
+                  </SCRIPT>
+                  <NOSCRIPT>
+                    <p>christoffervalland@gmail.com</p>
+                  </NOSCRIPT>
+                </p></li>
+              </ul>
+              <ul class="col-xs-9 col-sm-6">
+                <li><p><a href="https://no.linkedin.com/pub/christoffer-valland/91/a49/3/" target="blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></p></li>
+                <li><p><a href="https://www.facebook.com/christoffer.valland" target="blank"><i class="fa fa-facebook-square"></i> Facebook</a></p></li>
+                <li><p><a href="https://twitter.com/christofferv" target="blank"><i class="fa fa-twitter-square"></i> Twitter</a></p></li>
+                <li><p><a href="https://github.com/christoffervalland" target="blank"><i class="fa fa-github-square"></i> GitHub</a></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--
+        Tab "kontakt" end.
+        -->
+        </div>
+      <!--
+      Tab-content end.
+      -->
+      </div>
+      <p id="albert" about="dbr:Albert_Einstein"> <span property="foaf:name">Albert Einstein</span> </p>
+      <footer class="footer">
+        <div class="container">
+          <div class="text-center">
+            <p class="text-muted"> © <a href="http://christoffervalland.no/">Christoffer Valland</a> | 2015
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!--
+      Placed at the end of the document so the pages load faster
+      -->
+    <script src="Thirdparty/jQuery/jquery-2.1.1.js"></script>
+    <script src="Thirdparty/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Dashboard Application</title>
+  <script src="thirdparty/angular.min.js"></script>
+  <script src="thirdparty/jquery-1.12.1.min.js"></script>
+  <script src="thirdparty/highcharts.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+ </head>
+ <body>
+  <section ng-app="workfCharts">
+    <div class="graph-display" ng-controller="workfController">
+      <div class="bar-chart-box" ng-repeat="workflow in workflows">
+        {{workflow.title}}
+      </div>
+      <!--
+         <canvas class="chart chart-bar" data="{{workflow.title}}" labels="{{workflow.title}}" series="{{workflow.description}}"></canvas>
+       -->
+     </div>
+   </div>
+  </section>
+ </body>
+</html>

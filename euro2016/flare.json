@@ -1,0 +1,62 @@
+{
+  "name": "UEFA EURO 2016",
+  "children": [
+    {
+      "name": "Spain",
+      "children": [
+        {"name": "Anders B.", "goals": 122, "in": "yes"},
+        {"name": "Karsten", "goals": 68, "in": "yes"}
+      ]
+    },
+    {
+      "name": "Germany",
+      "children": [
+        {"name": "Christoffer", "goals": 139, "in": "yes"},
+        {"name": "Henrik", "goals": 111, "in": "yes"},
+        {"name": "André", "goals": 110, "in": "yes"},
+        {"name": "Ingrid", "goals": 126, "in": "yes"},
+        {"name": "Ådne", "goals": 125, "in": "yes"}
+      ]
+    },
+    {
+      "name": "England",
+      "children": [
+        {"name": "Knut", "goals": 160, "in": "yes"},
+        {"name": "Jan-Erlend", "goals": 130, "in": "yes"}
+      ]
+    },
+    {
+      "name": "Belgium",
+      "children": [
+        {"name": "Frederic", "goals": 127, "in": "yes"},
+        {"name": "Bård-Henning", "goals": 120, "in": "yes"},
+        {"name": "Jan-Erik", "goals": 140, "in": "yes"}
+      ]
+    },
+    {
+      "name": "France",
+      "children": [
+        {"name": "Hans", "goals": 127, "in": "yes"},
+        {"name": "Morten", "goals": 126, "in": "yes"}
+      ]
+    },
+    {
+      "name": "Italy",
+      "children": [
+        {"name": "Ole", "goals": 120, "in": "yes"}
+      ]
+    },
+    {
+      "name": "Poland",
+      "children": [
+        {"name": "Kevin", "goals": 132, "in": "yes"}
+      ]
+    },
+    {
+      "name": "Portugal",
+      "children": [
+        {"name": "Alex", "goals": 123, "in": "yes"}
+      ]
+    }
+  ]
+}

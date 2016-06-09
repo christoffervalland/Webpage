@@ -1,0 +1,49 @@
+{
+   "workflowList":[
+      {
+         "description":"Meeting start every day at 08:00",
+         "id":16,
+         "libraryId":4,
+         "steps":[
+            {
+               "description":"",
+               "id":14,
+               "title":"Status"
+            },
+            {
+               "description":"",
+               "id":16,
+               "title":"Agenda"
+            }
+         ],
+         "title":"Morning Meeting"
+      },
+      {
+         "description":"",
+         "id":22,
+         "libraryId":21,
+         "steps":[
+            {
+               "description":"",
+               "id":21,
+               "title":"Step 1"
+            },
+            {
+               "description":"",
+               "id":23,
+               "title":"Step 2"
+            }
+         ],
+         "title":"Test"
+      },
+      {
+         "description":"12:00 at friday. Quick update on the status on the Workflow manager development",
+         "id":2,
+         "libraryId":4,
+         "steps":[
+
+         ],
+         "title":"Weekly meeting with Chevron"
+      }
+   ]
+}

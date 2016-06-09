@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Epsis UEFA Euro 2016</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="thirdparty/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Epsis UEFA Euro 2016</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">The winner takes it all</a></li>
+    </ul>
+  </div>
+</nav>
+<body>
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-lg-2">
+        <div id="status">
+
+          <h2 id="currentGoals">Current Goals: 0</h2>
+
+          <h3>Leader board</h3>
+
+          <ol class="centerList" id="leaderBoard">
+          </ol>
+          <ul id="outOfCompBoard">
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div id="textContent">
+          <h1>Epsis UEFA EURO 2016</h1>
+          <p>Visualization of competitors in the Epsis UEFA Euro 2016 betting.</p>
+          <p>Those that has gone out of the competition is marked in grey.</p>
+          <p>Note: The visualization works best on desktop, but it should work on mobile devices also.</p>
+        </div>
+        <div id="flowerDiv"></div>
+      </div>
+      <!-- This goes in only to keep the side symmetric -->
+      <div class="col-lg-2">
+        <h3>Choose layout on the visualization</h3>
+        <a id="changeToView1" href="index.html"> View 1</a>
+        <br><br>
+        <a id="changeToView2" href="flower.html">View 2</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="thirdparty/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/codeFlower.js"></script>
+<script src="js/custom.js"></script>
