@@ -1,5 +1,3 @@
-var numbers = [];
-
 var diameter = 860,
 format = d3.format(",d"),
 color = d3.scale.category10();

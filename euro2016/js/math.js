@@ -1,6 +1,6 @@
-var totalGoals = 0;
-var averageGoals = 0;
-var updated = "";
+var totalGoals;
+var averageGoals;
+var updated;
 
 $.getJSON("./matchData.json", function(matchjson){
   //Data loaded, but do not do anything until EVERYTHING is loaded!
