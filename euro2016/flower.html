@@ -8,9 +8,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Epsis UEFA Euro 2016</a>
+      <a class="navbar-brand" href="index.html">Epsis UEFA Euro 2016</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html">Layout 1</a></li>
+      <li><a href="flower.html">Layout 2</a></li>
       <li><a href="#">The winner takes it all</a></li>
     </ul>
   </div>
@@ -21,32 +23,32 @@
       <div class="col-lg-2">
         <div id="status">
 
-          <h2 id="currentGoals">Current Goals: 13</h2>
-          <p>Last updated: 12.06.2016 - 22:50</p>
+          <h2 id="currentGoals">Current Goals: </h2>
+          <p id="lastUpdate">Last updated: </p>
 
           <h3>Leader board</h3>
+          <ol class="centerList" id="leaderBoard"></ol>
 
-          <ol class="centerList" id="leaderBoard">
-          </ol>
-          <ul id="outOfCompBoard">
-          </ul>
+          <div id="outOfCompDiv">
+            <h3>Out of competition</h3>
+            <ul class="centerList" id="outOfCompBoard">
+            </ul>
+          </div>
         </div>
       </div>
       <div class="col-lg-8">
         <div id="textContent">
           <h1>Epsis UEFA EURO 2016</h1>
-          <p>Visualization of competitors in the Epsis UEFA Euro 2016 betting.</p>
-          <p>Those that has gone out of the competition is marked in grey.</p>
-          <p>Note: The visualization works best on desktop, but it should work on mobile devices also.</p>
+          <p>Here you'll get an overview of the matches, and their results.</p>
+          <p>You'll also see the math behind the leader boards.</p>
         </div>
         <div id="flowerDiv"></div>
       </div>
       <!-- This goes in only to keep the side symmetric -->
       <div class="col-lg-2">
-        <h3>Choose layout on the visualization</h3>
-        <a id="changeToView1" href="index.html"> View 1</a>
-        <br><br>
-        <a id="changeToView2" href="flower.html">View 2</a>
+        <h2 id="currentGoalsAverage">Current average: </h2>
+        <h3>Leader board (by average)</h3>
+        <ol class="centerList" id="leaderBoardAverage"></ol>
       </div>
     </div>
   </div>
@@ -54,5 +56,6 @@
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="thirdparty/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/d3.min.js"></script>
+<script src="js/math.js"></script>
 <script src="js/codeFlower.js"></script>
 <script src="js/custom.js"></script>

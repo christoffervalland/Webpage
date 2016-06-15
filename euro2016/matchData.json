@@ -1,0 +1,145 @@
+{
+	"name": "UEFA EURO 2016",
+	"updated" : "15.06.2016 - 20:47",
+	"matches": [{
+		"match": 1,
+		"teams": {
+			"home": "France",
+			"away": "Romain"
+		},
+		"goals": {
+			"homegoals": 2,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 2,
+		"teams": {
+			"home": "Albain",
+			"away": "Switzerland"
+		},
+		"goals": {
+			"homegoals": 0,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 3,
+		"teams": {
+			"home": "Wales",
+			"away": "Slovakia"
+		},
+		"goals": {
+			"homegoals": 2,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 4,
+		"teams": {
+			"home": "England",
+			"away": "Russia"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 5,
+		"teams": {
+			"home": "Turkey",
+			"away": "Croatia"
+		},
+		"goals": {
+			"homegoals": 0,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 6,
+		"teams": {
+			"home": "Poland",
+			"away": "N. Ireland"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 0
+		}
+	}, {
+		"match": 7,
+		"teams": {
+			"home": "Germany",
+			"away": "Ukrain"
+		},
+		"goals": {
+			"homegoals": 2,
+			"awaygoals": 0
+		}
+	}, {
+		"match": 8,
+		"teams": {
+			"home": "Spain",
+			"away": "Czech Republic"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 0
+		}
+	}, {
+		"match": 9,
+		"teams": {
+			"home": "Ireland",
+			"away": "Sweden"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 10,
+		"teams": {
+			"home": "Belgium",
+			"away": "Italy"
+		},
+		"goals": {
+			"homegoals": 0,
+			"awaygoals": 2
+		}
+	}, {
+		"match": 11,
+		"teams": {
+			"home": "Austria",
+			"away": "Hungary"
+		},
+		"goals": {
+			"homegoals": 0,
+			"awaygoals": 2
+		}
+	}, {
+		"match": 12,
+		"teams": {
+			"home": "Portugal",
+			"away": "Iceland"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 1
+		}
+	}, {
+		"match": 13,
+		"teams": {
+			"home": "Russia",
+			"away": "Slovakia"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 2
+		}
+	}, {
+		"match": 14,
+		"teams": {
+			"home": "Romania",
+			"away": "Switzerland"
+		},
+		"goals": {
+			"homegoals": 1,
+			"awaygoals": 1
+		}
+	}]
+}

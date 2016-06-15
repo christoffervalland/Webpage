@@ -82,7 +82,6 @@ CodeFlower.prototype.update = function(json) {
   .classed('directory', function(d) { return (d._children || d.children) ? 1 : 0; })
   .attr("r", function(d) {
     var size = d.children ? d.children.length * 10 : d.goals / 5;
-    console.log(size);
     if(size > 50){
       return 50;
     } else{
@@ -90,7 +89,12 @@ CodeFlower.prototype.update = function(json) {
     }
   })
   .style("fill", function color(d) {
-    return "hsl(" + parseInt(360 / total * d.id, 10) + ",90%,70%)";
+    var fillColor = parseInt(360 / total * d.id, 10);
+    if(d.in === "no") {
+      return "hsl(" + fillColor + ",0%,70%)";
+    } else {
+      return "hsl(" + fillColor + ",90%,70%)";
+    }
   })
   .text(function(d){return d.name;})
   .call(this.force.drag)

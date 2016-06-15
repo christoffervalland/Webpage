@@ -26,8 +26,16 @@ line.link {
   stroke-width: 1.5px;
 }
 
-.centerList{
+.centerList {
+  display: inline-block;
     width:200px;
     margin:0 auto;
     text-align:left;
+}
+
+#goalList {
+  list-style-type: none;
+}
+
+#matchesDiv {
 }

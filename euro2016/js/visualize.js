@@ -15,7 +15,7 @@ var svg = d3.select("#textContent").append("svg")
 .attr("class", "bubble")
 .attr("id", "nodeDiv");
 
-d3.json("flare.json", function(error, root) {
+d3.json("./competitorData.json", function(error, root) {
   if (error) throw error;
 
   var node = svg.selectAll(".node")
@@ -32,11 +32,13 @@ d3.json("flare.json", function(error, root) {
   /** Use this when we have enough attendences: .attr("r", function(d) { return d.r; }) **/
   .attr("r", function(d) { return (d.r - 30) * 1.25; })
   .style("fill", function(d) {
-    var seen = {};
-
     var fillColor = color(d.packageName);
-    if(fillColor === "#7f7f7f"){
-      fillColor = color(d.packageName + 1);
+    if(d.in === "no") {
+      fillColor = "#7f7f7f";
+    } else {
+      if(fillColor === "#7f7f7f"){
+        fillColor = color(d.packageName + 1);
+      }
     }
 
     /** Returns a color generated from value in JSON **/
