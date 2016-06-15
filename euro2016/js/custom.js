@@ -1,73 +1,78 @@
+var competitors = [];
+var numberofgames = 51;
 $(function(){
-
   $("#outOfCompDiv").css("visibility", "hidden");
 
+  loadData();
+
+});
+
+function loadData(){
   $.getJSON("./competitorData.json", function(jsonData){
-    //Data is loaded, but don't do anything until ALL data is loaded.
-  })
-  .done(function(jsonData){
+    //Reset data in order to "refresh" data.
+    competitors = [];
+
     var visDiv = new CodeFlower("#flowerDiv", 930, 860);
     visDiv.update(jsonData);
 
     var countries = jsonData.children;
 
-    $.each(countries, function(i, item){
-      var competitors = item.children;
-      $.each(competitors, function(i, item){
-        if(item.in){
-          if(item.in === "no"){
-            $("#outOfCompBoard").append('<li id="li' + item.name + '">' + item.name + '</li>');
-          } else {
-            $("#leaderBoard").append('<li id="li' + item.name + '">' + item.name + " " + item.goals + '</li>');
-            var competitorsAverage = (item.goals / 51).toFixed(2);
-            $("#leaderBoardAverage").append('<li id="li' + item.name + '">' + item.name + " " + competitorsAverage + '</li>');
-          }
-        }
+    $.each(countries, function(i, country){
+      $.each(country.children, function(i, competitor){
+        competitors.push(competitor);
       });
     });
-
-    sortLeaderBoard();
-    sortLeaderBoardByAverage();
-
-    if($("#outOfCompBoard li").length > 0){
-      $("#outOfCompDiv").css("visibility", "visible");
-    }
+  })
+  .done(function(jsonData){
+    addAndSortLeaderBoard();
+    addAndSortLeaderBoardByAverage();
   })
   .fail(function(){
     alert("Failed to load data! Please notify CHV!");
   });
+}
 
-  function sortLeaderBoard(){
-    var mylist = $('#leaderBoard');
-    var listitems = mylist.children('li').get();
+function addAndSortLeaderBoard(){
+  var mylist = $('#leaderBoard');
 
-    if(totalGoals === 0){
-      totalGoals = 1;
+  competitors.sort(function(a, b) {
+    var firstValue = a.goals;
+    var secondValue = b.goals;
+
+    return Math.abs(totalGoals-firstValue) - Math.abs(totalGoals-secondValue);
+  })
+  $.each(competitors, function(idx, competitor) {
+    if(competitor.in) {
+      if(competitor.in === "no") {
+        $("#outOfCompBoard").append('<li id="li' + competitor.name + '">' + competitor.name + '</li>');
+      } else {
+        $("#leaderBoard").append('<li id="li' + competitor.name + '">' + competitor.name + " " + competitor.goals + '</li>');
+      }
     }
+    mylist.append(competitor);
+  });
 
-    listitems.sort(function(a, b) {
-      var firstValue = $(a).text().substr($(a).length - 4);
-      var secondValue = $(b).text().substr($(a).length - 4);
-
-      return Math.abs(totalGoals-firstValue) - Math.abs(totalGoals-secondValue);
-    })
-    $.each(listitems, function(idx, itm) { mylist.append(itm); });
+  if($("#outOfCompBoard li").length > 0){
+    $("#outOfCompDiv").css("visibility", "visible");
   }
+  
+}
 
-  function sortLeaderBoardByAverage(){
-    var mylist = $('#leaderBoardAverage');
-    var listitems = mylist.children('li').get();
+function addAndSortLeaderBoardByAverage(){
+  var mylist = $('#leaderBoardAverage');
 
-    if(averageGoals === 0){
-      averageGoals = 1;
+  competitors.sort(function(a,b){
+    var first = (a.goals / numberofgames).toFixed(2);
+    var second = (b.goals / numberofgames).toFixed(2);
+    return Math.abs(averageGoals - first) - Math.abs(averageGoals - second);
+  });
+
+  $.each(competitors, function(idx, competitor) {
+    mylist.append(competitor);
+
+    if(competitor.in){
+      var competitorsAverage = (competitor.goals / numberofgames).toFixed(2);
+      $("#leaderBoardAverage").append('<li id="li' + competitor.name + '">' + competitor.name + " " + competitorsAverage + '</li>');
     }
-
-    listitems.sort(function(a,b){
-      var firstCompetitor = $(a).text().substr($(a).length-5);
-      var secondCompetitor = $(b).text().substr($(b).length-5);
-      return Math.abs(averageGoals-firstCompetitor) - Math.abs(averageGoals-secondCompetitor);
-    });
-
-    $.each(listitems, function(idx, itm) { mylist.append(itm); });
-  }
-});
+  });
+}
