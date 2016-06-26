@@ -23,7 +23,7 @@ function loadData(){
       });
     });
   })
-  .done(function(jsonData){
+  .done(function(){
     addAndSortLeaderBoard();
     addAndSortLeaderBoardByAverage();
   })
@@ -40,7 +40,8 @@ function addAndSortLeaderBoard(){
     var secondValue = b.goals;
 
     return Math.abs(totalGoals-firstValue) - Math.abs(totalGoals-secondValue);
-  })
+  });
+
   $.each(competitors, function(idx, competitor) {
     if(competitor.in) {
       if(competitor.in === "no") {
@@ -55,7 +56,7 @@ function addAndSortLeaderBoard(){
   if($("#outOfCompBoard li").length > 0){
     $("#outOfCompDiv").css("visibility", "visible");
   }
-  
+
 }
 
 function addAndSortLeaderBoardByAverage(){
