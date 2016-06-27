@@ -162,7 +162,6 @@ this.update();
 
 CodeFlower.prototype.mouseover = function(d) {
   this.text.attr('transform', 'translate(' + d.x + ',' + (d.y - (d.children ? d.children.length * 5 : Math.sqrt(d.size) / 2)) + ')')
-  .text(d.name + ": " + d.size + " loc")
   .style('display', null);
 };
 
