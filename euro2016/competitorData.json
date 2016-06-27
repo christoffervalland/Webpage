@@ -4,8 +4,8 @@
     {
       "name": "Spain",
       "children": [
-        {"name": "Anders B.", "goals": 122, "in": "yes"},
-        {"name": "Karsten", "goals": 68, "in": "yes"}
+        {"name": "Anders B.", "goals": 122, "in": "no"},
+        {"name": "Karsten", "goals": 68, "in": "no"}
       ]
     },
     {

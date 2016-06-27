@@ -34,46 +34,71 @@ function loadData(){
 
 function addAndSortLeaderBoard(){
   var mylist = $('#leaderBoard');
-
-  competitors.sort(function(a, b) {
-    var firstValue = a.goals;
-    var secondValue = b.goals;
-
-    return Math.abs(totalGoals-firstValue) - Math.abs(totalGoals-secondValue);
-  });
+  var insiders = [];
+  var outsiders = [];
 
   $.each(competitors, function(idx, competitor) {
     if(competitor.in) {
       if(competitor.in === "no") {
-        $("#outOfCompBoard").append('<li id="li' + competitor.name + '">' + competitor.name + '</li>');
+        outsiders.push(competitor);
+        outsiders.sort(function(a,b){
+          return a.name - b.name;
+        });
       } else {
-        $("#leaderBoard").append('<li id="li' + competitor.name + '">' + competitor.name + " " + competitor.goals + '</li>');
+        insiders.push(competitor);
+        insiders.sort(function(a,b){
+          var firstValue = a.goals;
+          var secondValue = b.goals;
+
+          return Math.abs(totalGoals-firstValue) - Math.abs(totalGoals-secondValue);
+        });
       }
     }
-    mylist.append(competitor);
+  });
+
+  $.each(insiders, function(idx, competitor){
+    $("#leaderBoard").append('<li id="li' + competitor.name + '">' + competitor.name + " " + competitor.goals + '</li>');
+  });
+
+  $.each(outsiders, function(idx, competitor){
+    $("#outOfCompBoard").append('<li id="li' + competitor.name + '">' + competitor.name + '</li>');
   });
 
   if($("#outOfCompBoard li").length > 0){
     $("#outOfCompDiv").css("visibility", "visible");
   }
-
 }
 
 function addAndSortLeaderBoardByAverage(){
   var mylist = $('#leaderBoardAverage');
-
-  competitors.sort(function(a,b){
-    var first = (a.goals / numberofgames).toFixed(2);
-    var second = (b.goals / numberofgames).toFixed(2);
-    return Math.abs(averageGoals - first) - Math.abs(averageGoals - second);
-  });
-
+  var insiders = [];
+  var outsiders = [];
   $.each(competitors, function(idx, competitor) {
     mylist.append(competitor);
 
     if(competitor.in){
-      var competitorsAverage = (competitor.goals / numberofgames).toFixed(2);
-      $("#leaderBoardAverage").append('<li id="li' + competitor.name + '">' + competitor.name + " " + competitorsAverage + '</li>');
+      if(competitor.in === "no") {
+        outsiders.push(competitor);
+        outsiders.sort(function(a,b){
+          return a.name - b.name;
+        });
+      } else {
+        insiders.push(competitor);
+        insiders.sort(function(a,b){
+          var first = (a.goals / numberofgames).toFixed(2);
+          var second = (b.goals / numberofgames).toFixed(2);
+          return Math.abs(averageGoals - first) - Math.abs(averageGoals - second) || a.name - b.name;
+        });
+      }
     }
+  });
+
+  $.each(insiders, function(idx, competitor){
+    var competitorsAverage = (competitor.goals / numberofgames).toFixed(2);
+    $("#leaderBoardAverage").append('<li id="li' + competitor.name + '">' + competitor.name + " " + competitorsAverage + '</li>');
+  });
+
+  $.each(outsiders, function(idx, competitor){
+    $("#outOfCompBoardAverage").append('<li id="li' + competitor.name + '">' + competitor.name + '</li>');
   });
 }

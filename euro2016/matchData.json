@@ -1,6 +1,6 @@
 {
 	"name": "UEFA EURO 2016",
-	"updated" : "25.06.2016 - 23:32",
+	"updated" : "27.06.2016 - 19:51",
 	"matches": [{
 		"match": 1,
 		"teams": {
@@ -402,7 +402,7 @@
 			"awaygoals": 1
 		}
 	}, {
-		"match": 40,
+		"match": 41,
 		"teams": {
 			"home": "Germany",
 			"away": "Slovakia"
@@ -412,7 +412,7 @@
 			"awaygoals": 0
 		}
 	}, {
-		"match": 41,
+		"match": 42,
 		"teams": {
 			"home": "Hungary",
 			"away": "Belgium"
@@ -420,6 +420,16 @@
 		"goals": {
 			"homegoals": 0,
 			"awaygoals": 4
+		}
+	}, {
+		"match": 43,
+		"teams": {
+			"home": "Italy",
+			"away": "Spain"
+		},
+		"goals": {
+			"homegoals": 2,
+			"awaygoals": 0
 		}
 	}]
 }
